@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css2/master2.css">
+    <link rel="stylesheet" href="css2/master2.3.css">
     <title>save-ukraine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
 </head>
 <body>
 <section class="section-container">
-    <video id="video" src="img/output2.mp4" autoplay muted loop >
+    <div class="before-video"></div>
+    <video id="video" autoplay muted loop >
+        <source src="/img/bg-snow%20(video-converter.com).webm" type="video/webm">
+        <source src="/img/snow-cut.mp4" type="video/mp4">
     </video>
     <div id="main-container">
         <div class="rectangle">
@@ -36,12 +40,13 @@
         <div id="main-content">
             <span id="main-items"> один ничтожный доллар может </span>
             <h1 id="main-title">СПАСТИ ЖИЗНЬ</h1>
+            <button id="main-button"> Хочу помочь</button>
         </div>
-        <button id="main-button"> Хочу помочь</button>
+        <div class="circle">
+            <p id="slava-ukraini">Slava Ukraini</p>
+        </div>
     </div>
-    <div class="circle">
-        <p id="slava-ukraini">Slava Ukraini</p>
-    </div>
+
 
 </section>
 
@@ -65,11 +70,14 @@
         </div>
         <div class="about-item">
             <div class="about-item-image">
+                <source  srcset="./img/about1.webp" type="image/webp">
                 <img src="img/about1.png" alt="">
             </div>
         </div>
         <div class="about-item">
             <div class="about-item-image">
+                <source  srcset="./img/about3.webp"
+                         type="image/webp">
                 <img src="img/about3.png" alt="">
             </div>
         </div>
@@ -128,56 +136,97 @@
     <div id="reserve-container">
         <div id="reserve-title" class="header">Получить помощь</div>
         <div id="reserve-description"> Подать заявку на получение помощи можно заполнив форму ниже.</div>
-        <form action="" id="reserve-forma">
-            <input type=".." placeholder="Ваше имя">
-            <input type=".." placeholder="Ваш телефон">
-            <button class="button">Записаться</button>
-        </form>
+        <div class="forma">
+
+            <form class="SendMail" method="post" enctype="multipart/form-data" id="reserve-forma">
+                <input type="hidden" name="type_name" value="разные формы">
+                <div>
+                    <input type=".."
+                      name="Name" placeholder="Ваше имя">
+                </div>
+                <div>
+                      <input type=".." name="Phone" placeholder="Ваш телефон">
+                </div>
+                 <div>
+                    <button type="submit" class="button">Записаться
+                    </button>
+                </div>
+            </form>
+        </div>
+
     </div>
 </div>
 <div id="foto">
     <div id="foto-container">
         <div id="foto-title" class="header">Наши результаты</div>
         <div id="foto-images">
-            <img class="foto-img-hov" src="img/foto1.png" alt="">
-            <img class="foto-img-hov" src="img/foto5.png" alt="">
-            <img class="foto-img-hov" src="img/foto3.png" alt="">
-            <img class="foto-img-hov" src="img/foto4.png" alt="">
+            <div class="foto-img-hov">
+                <img  src="img/foto1.png" alt="">
+            </div>
+            <div class="foto-img-hov">
+                <img src="img/foto5.png" alt="">
+            </div>
+            <div class="foto-img-hov">
+                <img src="img/foto3.png" alt="">
+            </div>
+            <div class="foto-img-hov">
+                <img src="img/foto4.png" alt="">
+            </div>
         </div>
     </div>
 </div>
-<div id="footer">
-    <div id="footer-container">
-        <div id="footer-header">
-            <div id="footer-header-logo">
-                <img src="img/logo2.png" alt="">
-                <span>Save Ukraine</span>
-            </div>
-        </div>
-            <div id="footer-time">
-                <div id=footer-time-image>
-                    <img src="img/png-clock.png" alt="user">
-                </div>
-                <div id="footer-time-text">
-                    <div id="footer-time-text-title">Режим работы</div>
-                    <div id="footer-time-text-descrip">00-24</div>
+<div class="footer">
+    <div class="footer-block">
+        <div class="footer-block-row">
+            <div class="footer-block-column">
+                <div id="footer-header-logo">
+                    <div class="footer-image">
+                        <img src="img/logo2.png" alt="">
+                    </div>
+                    <span>Save Ukraine</span>
                 </div>
             </div>
-        <div id="footer-adress">
-            <div id=footer-adress-image>
-                <img src="img/png-adres.png" alt="user">
+            <div class="footer-block-column">
+                <div class="footer-time">
+                    <div class=footer-image>
+                        <img src="img/png-clock.png" alt="user">
+                    </div>
+                    <div id="footer-time-text">
+                        <div id="footer-time-text-title">Режим работы</div>
+                        <div id="footer-time-text-descrip">00-24</div>
+                    </div>
+                </div>
             </div>
-            <div id="footer-adress-text">
-                <div id="footer-adress-text-title">Адрес</div>
-                <div id="footer-adress-text-descrip">Мы из Украины</div>
+            <div class="footer-block-column">
+                <div class="footer-adress">
+                    <div class=footer-image>
+                        <img src="img/png-adres.png" alt="user">
+                    </div>
+                    <div id="footer-adress-text">
+                        <div id="footer-adress-text-title">Адрес</div>
+                        <div id="footer-adress-text-descrip">Мы из Украины</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-block-column">
+                <div class="footer-phone">
+                    <div class="footer-phone-img">
+                        <img src="img/tel2.png" alt="">
+                    </div>
+                   <div class="footer-phone-text">
+                       <span>+380930596935</span>
+                   </div>
+                </div>
             </div>
         </div>
-            <div id="footer-header-phone">
-                <img src="img/tel2.png" alt="">
-                <span>+380930596935</span>
-            </div>
     </div>
-</div>
+ </div>
+
+<script src="/vg/www/templates/modules/mail/js/mail.js"></script>
+<script src="/js/script.js">
+</script>
+
 </body>
+
 
 </html>
