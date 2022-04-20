@@ -76,8 +76,6 @@ const aboutItemImage =
 
      let formData = new FormData(event.target);
 
-     console.log(...formData);
-
      let xhr = new XMLHttpRequest();
 
      xhr.onreadystatechange = function () {
