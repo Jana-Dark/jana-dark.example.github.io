@@ -5,7 +5,11 @@
     <title>save-ukraine</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-
+    <script defer src="lips/inputmask.min.js" ></script>
+    <!--<script defer src="lips/just-validate.min.js"
+></script>-->
+    <script defer src="lips/just-validate3.3.3.min.js" ></script>
+    <script defer src="js/script.js"></script>
 </head>
 <body>
 <section class="section-container">
@@ -138,14 +142,20 @@
         <div id="reserve-description"> Подать заявку на получение помощи можно заполнив форму ниже.</div>
         <div class="forma">
 
-            <form class="SendMail" method="post" enctype="multipart/form-data" id="reserve-forma">
-                <input type="hidden" name="type_name" value="разные формы">
+            <form class="form" action="#" name="test" id="reserve-forma" method="post" enctype="multipart/form-data">
                 <div>
-                    <input type=".."
-                      name="Name" placeholder="Ваше имя">
+                    <input type="text"
+                           name="Name"
+                           class="input input-name"
+                           data-validate-feild="name"
+                           placeholder="Ваше имя">
                 </div>
                 <div>
-                      <input type=".." name="Phone" placeholder="Ваш телефон">
+                      <input type="tel"
+                             name="tel"
+                             class="input input-tel"
+                             data-validate-feild="tel"
+                             placeholder="Ваш телефон">
                 </div>
                  <div>
                     <button type="submit" class="button">Записаться
@@ -222,9 +232,10 @@
     </div>
  </div>
 
-<script src="/vg/www/templates/modules/mail/js/mail.js"></script>
-<script src="/js/script.js">
-</script>
+
+<!--
+<script src="https://ajax.googleapis
+.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 
 </body>
 
