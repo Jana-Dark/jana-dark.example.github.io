@@ -27,7 +27,7 @@ try {
   $mail->setFrom('elektrodyuvsem@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('dava.jani@gmail.com');
+  $mail->addAddress('elektrodyuvsem@gmail.com');
 
 
 
