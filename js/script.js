@@ -1,5 +1,4 @@
 
-
  const mainTitle = document.querySelector ("#main-title");
  const mainHeaderMenu =document.querySelectorAll("#main-header-menu");
 
@@ -16,11 +15,11 @@ window.addEventListener( "scroll", function (){
  }
 });
 
-const aboutItemImage =
+ /*const aboutItemImage =
  document.querySelector(".about-item-image");
 
 
- /*window.addEventListener( "scroll", function (){
+window.addEventListener( "scroll", function (){
      let scrollAboutImage =window.scrollY;
 
      if (scrollAboutImage>700) {
@@ -72,6 +71,7 @@ const aboutItemImage =
        errorMessage: 'Введите корректный телефон',
       },
      ]).onSuccess((event) => {
+     console.log('Validation passes and form submitted', event);
 
      let formData = new FormData(event.target);
 
