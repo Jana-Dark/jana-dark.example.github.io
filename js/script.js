@@ -72,7 +72,6 @@ const aboutItemImage =
        errorMessage: 'Введите корректный телефон',
       },
      ]).onSuccess((event) => {
-     console.log('Validation passes and form submitted', event);
 
      let formData = new FormData(event.target);
 
