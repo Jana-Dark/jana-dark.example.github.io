@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <link rel="stylesheet" href="css2/master2.3.css">
+    <title>save-ukraine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script defer src="lips/inputmask.min.js" ></script>
+    <!--<script defer src="lips/just-validate.min.js"
+></script>-->
+    <script defer src="lips/just-validate3.3.3.min.js" ></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+<section class="section-container">
+    <div class="before-video"></div>
+    <video id="video" autoplay muted loop >
+        <source src="/img/bg-snow%20(video-converter.com).webm" type="video/webm">
+        <source src="/img/snow-cut.mp4" type="video/mp4">
+    </video>
+    <div id="main-container">
+        <div class="rectangle">
+            <p class="par1">
+                God Save Ukraine!
+            </p>
+        </div>
+        <div id="main-header">
+            <div id="main-header-logo">
+                <img src="img/logo.png" alt="..">
+                <span>Save Ukraine</span>
+            </div>
+            <div id="main-header-menu">
+                <a href="#about-header" class="menu-design">О нас</a>
+                <a href="#services" class="menu-design">Оказать помощь</a>
+                <a href="#reserve" class="menu-design">Получить помощь</a>
+                <a href="#footer" class="menu-design">Контакты</a>
+            </div>
+
+            <div id="main-header-phone">
+                <img src="img/tel.png" alt="user">
+                <span> <a href="tel:+380930596935">+380930596935</a></span>
+            </div>
+        </div>
+        <div id="main-content">
+            <span id="main-items"> один ничтожный доллар может </span>
+            <h1 id="main-title">СПАСТИ ЖИЗНЬ</h1>
+            <button id="main-button"> Хочу помочь</button>
+        </div>
+        <div class="circle">
+            <p id="slava-ukraini">Slava Ukraini</p>
+        </div>
+    </div>
+
+
+</section>
+
+<div id="about">
+    <div id="about-container">
+        <div class="about-item">
+            <div class="header" id="about-header">
+                <div class="about-box">
+                    <div class="about-text-box" >Есть о чём подумать</div>
+                    <div class="about-text-box">Прочитай внимательно</div>
+                    <div class="about-text-box">Сделай вывод</div>
+                </div>
+            </div>
+            <div class="about-text"> Когда Бог хотел создать рыбу, Он обратился к воде.
+                Когда Бог хотел создать деревья, Он обратился к земле.
+                Когда Бог хотел создать человека, Он обратился к Самому Себе.
+
+                Если вынуть рыбу из воды, она погибнет и когда вы вытаскиваете дерево из земли, оно тоже умирает.
+                когда человек отделяется от Бога, он умирает.
+            </div>
+        </div>
+        <div class="about-item">
+            <div class="about-item-image">
+                <source  srcset="./img/about1.webp" type="image/webp">
+                <img src="img/about1.png" alt="">
+            </div>
+        </div>
+        <div class="about-item">
+            <div class="about-item-image">
+                <source  srcset="./img/about3.webp"
+                         type="image/webp">
+                <img src="img/about3.png" alt="">
+            </div>
+        </div>
+        <div class="about-item">
+            <div class="about-text"> Давайте помнить: вода без рыбы остается водой, а рыба без воды - ничто.
+                Почва без дерева остается почвой, а дерево без почвы - ничто
+                Бог без человека остается Богом, но человек без Бога - ничто.
+                Да благословит нас всех Бог.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div id="services-container">
+        <div id="services-title" class="header"> Оказать помощь</div>
+        <div id="service-items">
+            <div class="service-items">
+                <div class="service-item-image"><img src="img/ser1.png" alt="user"></div>
+                <div class="service-item-text">Помочь переселенцам</div>
+            </div>
+            <div class="service-items-bg">
+                <div class="service-item-image"><img src="img/ser2.png" alt="user"></div>
+                <div class="service-item-text">Помочь детям</div>
+            </div>
+            <div class="service-items">
+                <div class="service-item-image"><img src="img/ser3.png" alt="user"></div>
+                <div class="service-item-text">Помочь старикам</div>
+            </div>
+            <div class="service-items-bg">
+                <div class="service-item-image"><img src="img/ser4.png" alt="user"></div>
+                <div class="service-item-text">Помочь военным</div>
+            </div>
+            <div class="service-items-bg">
+                <div class="service-item-image"><img src="img/ser5.png" alt="user"></div>
+                <div class="service-item-text">Отправить финансы</div>
+            </div>
+            <div class="service-items">
+                <div class="service-item-image"><img src="img/ser6.png" alt="user"></div>
+                <div class="service-item-text">На отстройку городов</div>
+            </div>
+            <div class="service-items-bg">
+                <div class="service-item-image"><img src="img/ser7.png" alt="user"></div>
+                <div class="service-item-text">Помочь лекарствами</div>
+            </div>
+            <div class="service-items">
+                <div class="service-item-image"><img src="img/ser8.png" alt="user">
+                </div>
+                <div class="service-item-text">На помощь СМИ
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="reserve">
+    <div id="reserve-container">
+        <div id="reserve-title" class="header">Получить помощь</div>
+        <div id="reserve-description"> Подать заявку на получение помощи можно заполнив форму ниже.</div>
+        <div class="forma">
+
+            <form class="form" action="#" name="test" id="reserve-forma" method="post" enctype="multipart/form-data">
+                <div>
+                    <input type="text"
+                           name="Name"
+                           class="input input-name"
+                           data-validate-feild="name"
+                           placeholder="Ваше имя">
+                </div>
+                <div>
+                      <input type="tel"
+                             name="tel"
+                             class="input input-tel"
+                             data-validate-feild="tel"
+                             placeholder="Ваш телефон">
+                </div>
+                 <div>
+                    <button type="submit" class="button">Записаться
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+<div id="foto">
+    <div id="foto-container">
+        <div id="foto-title" class="header">Наши результаты</div>
+        <div id="foto-images">
+            <div class="foto-img-hov">
+                <img  src="img/foto1.png" alt="">
+            </div>
+            <div class="foto-img-hov">
+                <img src="img/foto5.png" alt="">
+            </div>
+            <div class="foto-img-hov">
+                <img src="img/foto3.png" alt="">
+            </div>
+            <div class="foto-img-hov">
+                <img src="img/foto4.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-block">
+        <div class="footer-block-row">
+            <div class="footer-block-column">
+                <div id="footer-header-logo">
+                    <div class="footer-image">
+                        <img src="img/logo2.png" alt="">
+                    </div>
+                    <span>Save Ukraine</span>
+                </div>
+            </div>
+            <div class="footer-block-column">
+                <div class="footer-time">
+                    <div class=footer-image>
+                        <img src="img/png-clock.png" alt="user">
+                    </div>
+                    <div id="footer-time-text">
+                        <div id="footer-time-text-title">Режим работы</div>
+                        <div id="footer-time-text-descrip">00-24</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-block-column">
+                <div class="footer-adress">
+                    <div class=footer-image>
+                        <img src="img/png-adres.png" alt="user">
+                    </div>
+                    <div id="footer-adress-text">
+                        <div id="footer-adress-text-title">Адрес</div>
+                        <div id="footer-adress-text-descrip">Мы из Украины</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-block-column">
+                <div class="footer-phone">
+                    <div class="footer-phone-img">
+                        <img src="img/tel2.png" alt="">
+                    </div>
+                   <div class="footer-phone-text">
+                       <span>+380930596935</span>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+<!--
+<script src="https://ajax.googleapis
+.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+</body>
+
+
+</html>

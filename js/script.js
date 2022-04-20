@@ -14,7 +14,6 @@ window.addEventListener( "scroll", function (){
  else {
      mainTitle.classList.remove('red');
  }
- console.log(scrollingPos);
 });
 
 const aboutItemImage =
@@ -34,12 +33,11 @@ const aboutItemImage =
      console.log(scrollAboutImage);
  }); */
 
- console.log('Init!');
 
  // inputmask
  const form = document.querySelector('form');
  const telSelector = form.querySelector('input[type="tel"]');
- const inputMask = new Inputmask ('+38 (099)-999-99-99');
+ const inputMask = new Inputmask ('+38 (099) 999-99-99');
  inputMask.mask(telSelector);
 
  const validation = new JustValidate('.form');
@@ -69,7 +67,7 @@ const aboutItemImage =
        rule: 'function',
        validator: function() {
         const phone = telSelector.inputmask.unmaskedvalue();
-        return phone.length === 10;
+        return phone.length === 9;
        },
        errorMessage: 'Введите корректный телефон',
       },
